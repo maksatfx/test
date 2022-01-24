@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О НАС</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@700&family=Genos:ital,wght@1,700&family=Luxurious+Script&family=Meow+Script&family=Montserrat:ital@1&display=swap"
+		rel="stylesheet">
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100%;
+		height: auto;
+		font-family: Cuprum, Arial, Helvetica, sans-serif;
+	}
+
+	.source-title {
+		max-width: 1180px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	#text {
+		font-size: 25px;
+		color: red;
+		font-weight: 700;
+		font-style: italic;
+		text-align: center;
+	}
+
+	#span {
+		font-style: italic;
+		color: blue;
+		text-align: center;
+	}
+
+	.text {
+		text-align: center;
+	}
+
+	.source-title h2 {
+		font-size: 24px;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.head-container {
+		display: flex;
+		justify-content: center;
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.my-btn {
+		display: flex;
+		justify-content: center;
+		margin: 10px;
+	}
+
+	.submit a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.submit {
+		background: tomato;
+		color: #fff;
+		width: 80px;
+		height: 30px;
+		border-radius: 5px;
+		border: none;
+		margin-bottom: 20px;
+	}
+
+	.submit:hover {
+		background-color: tomato;
+		opacity: 1;
+	}
+
+	.link-item {
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.list-item {
+		margin: 10px 25px;
+		font-size: 18px;
+	}
+
+	.list-item span {
+		font-size: 25px;
+		color: blue;
+		font-style: italic;
+	}
+
+	.block {
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.contacts li {
+		font-size: 14px;
+		font-weight: 600;
+		list-style: none;
+		margin: 5px 25px;
+	}
+
+	.contacts li img {
+		width: 15px;
+	}
+
+	.block-two {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.block-two h2 {
+		text-align: center;
+		margin: 20px 0px;
+	}
+
+	.bg-img {
+		/* The image used */
+		background-image: url("../img/blanc1.jpg");
+
+		min-height: 380px;
+
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	.row {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.col-sm-4 {
+		width: 500px;
+		height: auto;
+		padding: 40px 40px;
+		text-align: center;
+	}
+
+	#form-title {
+		text-align: center;
+	}
+
+	.form-group {
+		padding: 10px 10px;
+	}
+
+	#form-button {
+		height: 35px;
+		padding: 0px 0px 2px 0px;
+	}
+
+	#my-form {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 20px;
+		margin: 20px;
+		color: #fff;
+	}
+
+
+	/* Add styles to the form container */
+	.box-container {
+		position: absolute;
+		right: 0;
+		margin: 20px;
+		max-width: 300px;
+		padding: 16px;
+		background-color: white;
+	}
+
+	.btn {
+		background-color: tomato;
+		color: white;
+		padding: 10px 10px;
+		border: none;
+		cursor: pointer;
+		width: 320px;
+		opacity: 0.9;
+	}
+
+	.btn:hover {
+		background-color: tomato;
+		opacity: 1;
+	}
+
+	.ssylka {
+		text-decoration: none;
+		color: blue;
+	}
+
+	@media screen and (max-width: 767px) {
+		.row {
+			width: 100%;
+		}
+
+		.col-sm-4 {
+			width: 400px;
+			height: auto;
+			padding: 20px 20px;
+			text-align: center;
+		}
+
+		#form-title {
+			text-align: center;
+		}
+
+		.form-group {
+			padding: 10px 10px;
+		}
+
+		#form-button {
+			width: 310px;
+			height: 30px;
+			padding: 0px 0px 2px 0px;
+		}
+
+		#my-form {
+			background: rgba(0, 0, 0, 0.7);
+			padding: 8px;
+			margin: 8px;
+			height: auto;
+			color: #fff;
+
+		}
+
+		.btn {
+			background-color: tomato;
+			color: white;
+			padding: 10px 10px;
+			border-radius: 5px;
+			width: 350px;
+			opacity: 0.9;
+		}
+
+		.btn:hover {
+			background-color: tomato;
+			opacity: 1;
+		}
+	}
+
+	@media screen and (max-width: 420px) {
+		.link-item {
+			width: 100%;
+
+		}
+
+		.list-item {
+			margin: 5px 5px;
+			font-size: 16px;
+		}
+
+		.block-two {
+			max-width: 100%;
+
+		}
+
+		.block-two h2 {
+			text-align: center;
+			margin: 20px 0px;
+		}
+
+		.bg-img {
+			/* The image used */
+			background-image: url("../img/blanc1.jpg");
+
+			min-height: 380px;
+
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.row {
+			width: 100%;
+
+		}
+
+		.col-sm-4 {
+			width: 100%;
+			height: auto;
+			padding: 10px 10px;
+			text-align: center;
+
+		}
+
+		#form-title {
+			text-align: center;
+		}
+
+		.form-group {
+			padding: 10px 10px;
+		}
+
+		#form-button {
+			width: 200px;
+			height: 30px;
+			padding: 0px 0px 2px 0px;
+		}
+
+		#my-form {
+			background: rgba(0, 0, 0, 0.7);
+			padding: 8px;
+			margin: 8px 5px 8px 25px;
+			color: #fff;
+		}
+
+		.btn {
+			background-color: tomato;
+			color: white;
+			padding: 10px 10px;
+			border-radius: 5px;
+			width: 100%;
+			opacity: 0.9;
+		}
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<div class="source-title">
+			<span class="navbar-brand" id="text">GUWANCHLY <span id="span"> YHLAS</span></span>
+		</div>
+		<div class="head-container">
+			<h2 class="text">О Нас</h2>
+		</div>
+		<div class="link-item">
+			<ul class="list-item">
+				<li>Транспортная Компания « GUWANCHLY YHLAS
+					» создана в 2017 году как
+					международная
+					транспортно-экспедиторская
+					компания и
+					работает с 2017
+					года в сфере Логистики и экспедироваинию грузов. В настоящее время наша компания успешно
+					осуществляет
+					любые
+					виды грузоперевозок наземным, морским,железной дорогой на вагонах
+					и
+					воздушным путём. Мы можем с уверенностью сказать, что Наша Компания
+					обеспечивает
+					надежную партнерскую сеть с помощью наших представительств и надежных партнеров в разных уголках
+					мира.
+					Если вам нужно доставить груз в любой город России – и города стран СНГ
+					из
+					Китая,
+					из Турции, из Индии и из ОАЭ также в обратном направлении в
+					больших или малых
+					объемах, срочно и надежно? – Tакую задачу стоит поручить опытным специалистам.</li>
+				<li>Наша Компания организовывает грузоперевозки
+					не только на автотранспорте и по Ж/Д a также если срочно можем отправить Ваш груз
+					и
+					авиатранспортом прямо до получателя.</li>
+				</li>
+				<li>
+					Мы предоставляем свои услуги как частным лицам, так и представителям бизнеса, гарантируя сохранность
+					вашего груза и точное прибытие в пункт назначения в рамках установленных сроков.
+				</li>
+				<li>
+					Хотите получить более подробную информацию о доставке грузов по России и по СНГ с Нашей Компанией и
+					цене
+					грузоперевозок? Напишите или позвоните Нам!
+				</li>
+			</ul>
+		</div>
+		<section class="block-two">
+			<h2>Связатся с Нами</h2>
+			<div class="bg-img">
+				<div class="row">
+					<div class="col-sm-4">
+						<form action="mail.php" method="POST" id="my-form">
+							<legend id="form-title">Отправить Запрос</legend>
+
+							<div class="form-group">
+								<label for="">Введите ваше имя</label>
+								<input type="text" class="form-control" id="" name="user_name" placeholder="Ваше имя. . ."
+									required>
+							</div>
+
+							<div class="form-group">
+								<label for="">Введите Ваш email</label>
+								<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru. . ."
+									required>
+							</div>
+
+							<div class="form-group">
+								<label for="">Введите номер телефона</label>
+								<input type="text" class="form-control" id="" name="user_phone"
+									placeholder="Ваш номер телефона. . .">
+							</div>
+
+							<button type="submit" class="btn btn-primary" id="form-button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br>
+		<div class="block">
+			<ul class="contacts">
+				<li><img src="../img/old-phone-svgrepo-com.svg" alt="svg"> tel: + 993 12 75-44-73 </li>
+				<li><img src="../img/tel.svg" alt="svg"> mobile: + 993 63 92-88-86 </li>
+				<li><img src="../img/whatsapp.svg" alt="svg"> WhatsApp: + 995 555-47-96-60 </li>
+				<li><img src="../img/attherate.svg" alt="svg"> email: muratgeldyyev@inbox.ru </li>
+			</ul>
+		</div>
+		<div class="my-btn">
+			<button type="submit" class="submit">
+				<a href="../index.html">Назад</a>
+			</button>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

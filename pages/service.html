@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@700&family=Genos:ital,wght@1,700&family=Luxurious+Script&family=Meow+Script&family=Montserrat:ital@1&display=swap"
+		rel="stylesheet">
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100%;
+		height: auto;
+		font-family: Cuprum, Arial, Helvetica, sans-serif;
+	}
+
+	.source-title {
+		max-width: 1180px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	#text {
+		font-size: 25px;
+		color: red;
+		font-weight: 700;
+		font-style: italic;
+		text-align: center;
+	}
+
+	#span {
+		font-style: italic;
+		color: blue;
+		text-align: center;
+	}
+
+	.source-title span {
+		text-align: center;
+		margin: 20px 0px 10px 0px;
+	}
+
+	.source-title h4,
+	p {
+		font-size: 24px;
+		text-align: center;
+		margin: 10px 0px;
+	}
+
+	.head-container p {
+		display: flex;
+		justify-content: center;
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.link-item {
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.list-item li {
+		margin: 5px 10px;
+		font-size: 16px;
+	}
+
+	.my-btn {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	.submit a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.submit {
+		background: tomato;
+		color: #fff;
+		width: 80px;
+		height: 30px;
+		border-radius: 5px;
+		border: none;
+		margin: 20px 0px;
+	}
+
+	.link-item {
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.list-item {
+		margin: 10px 25px;
+		font-size: 18px;
+	}
+
+	.block {
+		max-width: 1180px;
+		margin: 0px auto;
+	}
+
+	.contacts li {
+		font-size: 16px;
+		font-weight: 600;
+		list-style: none;
+		margin-left: 20px;
+	}
+
+	.contacts li img {
+		width: 15px;
+	}
+
+	/*------Медиа запрсы--------*/
+	@media screen and (max-width: 767px) {
+		.source-title span {
+			text-align: center;
+			margin: 20px 0px 5px 0px;
+		}
+
+		.head-container p {
+			font-size: 20px;
+			text-align: center;
+			margin: 5px 0px;
+		}
+
+		.head-container {
+			display: flex;
+			justify-content: center;
+			max-width: 1180px;
+			margin: 0px auto;
+		}
+
+		.link-item {
+			max-width: 1180px;
+			margin: 0px auto;
+		}
+
+		.list-item li {
+			margin: 10px 5px;
+			font-size: 16px;
+		}
+
+		.my-btn {
+			display: flex;
+			justify-content: center;
+		}
+
+		.submit a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.submit {
+			background: tomato;
+			color: #fff;
+			width: 250px;
+			height: 30px;
+			border-radius: 5px;
+			border: none;
+			margin: 15px 0px;
+		}
+
+		.block {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		.contacts li {
+			font-size: 14px;
+			font-weight: 600;
+			list-style: none;
+			margin-left: 20px;
+		}
+
+		.contacts li img {
+			width: 15px;
+
+		}
+	}
+
+	@media screen and (max-width: 420px) {
+		.source-title span {
+			text-align: center;
+			margin: 15px 0px 0px 0px;
+		}
+
+		.head-container p {
+			font-size: 20px;
+			text-align: center;
+			margin: 5px 0px;
+		}
+
+		.head-container {
+			display: flex;
+			justify-content: center;
+			max-width: 1180px;
+			margin: 0px auto;
+		}
+
+		.list-item li {
+			margin: 10px 5px 0px 5px;
+			font-size: 16px;
+		}
+
+		.my-btn {
+			display: flex;
+			justify-content: center;
+		}
+
+		.submit a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.submit {
+			background: tomato;
+			color: #fff;
+			width: 250px;
+			height: 30px;
+			border-radius: 5px;
+			border: none;
+			margin: 15px 0px;
+		}
+
+		.block {
+			display: flex;
+			justify-content: center;
+		}
+
+		.contacts li {
+			font-size: 14px;
+			font-weight: 600;
+			list-style: none;
+		}
+
+		.contacts li img {
+			width: 15px;
+
+		}
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<div class="source-title">
+			<span class="navbar-brand" id="text">GUWANCHLY <span id="span"> YHLAS</span></span>
+		</div>
+		<div class="head-container">
+			<p>Условия предоставления услуг:</p>
+		</div>
+		<div class="link-item">
+			<ul class="list-item">
+				<li>
+					Услуги Нашкй Компании предоставляются на основании официального подписанного двумя
+					сторонами договора. При необходимости, клиент также может заключить договор на
+					транспортно-экспедиционное сопровождение груза.
+					Компания осуществляет перевозку грузов в минимальные сроки и информирует Наших клиентов о
+					метонахождении их груза, клиент также может воспользоваться
+					услугой срочной доставки с помощью авиатранспорта.</li>
+				<li>
+					Грузовые перевозки по России и СНГ можно оплатить при сдаче груза на склад, во время
+					транспортировки
+					груза, при получении в таможенном Терминале или при адресной доставке получателю. Для юридических
+					лиц,
+					заключивших договор, действуют специальные условия в виде авансового платежа или отсрочки платежа.
+				</li>
+				<li>
+					Одной из дополнительных услуг является адресная доставка. При необходимости мы доставим Ваш груз по
+					указанному адресу. Все грузы страхуются в Страховой компании Нашей компанией и от погрузки до
+					выгрузки
+					Вашего груза контролируется нашими опытными сотрудниками.</li>
+				<li>
+					Для более подробней информацией обратитесь к
+					Нашим операторам отправьте Заявку на наш емайл адрес интересуещим Вас запросом или позвоните по
+					номеру
+					указанного ниже!
+				</li>
+			</ul><br>
+			<div class="block">
+				<ul class="contacts">
+					<li><img src="../img/old-phone-svgrepo-com.svg" alt="svg"> tel: + 993 12 75-44-73 </li>
+					<li><img src="../img/tel.svg" alt="svg"> mobile: + 993 63 92-88-86 </li>
+					<li><img src="../img/whatsapp.svg" alt="svg"> WhatsApp: + 995 555-47-96-60 </li>
+					<li><img src="../img/attherate.svg" alt="svg"> email: muratgeldyyev@inbox.ru </li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="my-btn">
+			<button type="submit" class="submit">
+				<a href="../index.html">Назад</a>
+			</button>
+		</div>
+	</div>
+</body>
+
+</html>
